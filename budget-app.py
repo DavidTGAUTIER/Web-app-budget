@@ -55,7 +55,7 @@ with st.form("periodes_sauvegardees"):
     soumission = st.form_submit_button("Affichage de la période")
     if soumission:
         # TODO: Obtenir les données depuis la database
-        commentaire = "Quelque commentaire"
+        commentaire = "..."
         revenus = {'Salaire':1500, 'Blog':50, 'Autre revenu':10}
         depenses = {'Location':600, 'Charges':300, 'Course':150, 'Voiture':100, 'Economie':50, 'Autre dépense':30}
         # Creation des metriques
@@ -65,3 +65,7 @@ with st.form("periodes_sauvegardees"):
         col1, col2, col3 = st.columns(3)
         col1.metric("Revenus total", f"{revenus_total} {devise}")
         col2.metric("Depenses total", f"{depenses_total} {devise}")
+        col3.metric("Budget restant", f"{budget_restant} {devise}")
+        st.text(f"Commentaire: {commentaire}")
+
+# with pleasure
