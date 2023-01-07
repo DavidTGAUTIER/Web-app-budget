@@ -21,6 +21,12 @@ annees = [datetime.today().year, datetime.today().year+1]
 mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]
 # months = list(calendar.month_name[1:])
 
+#-------------------------------- MENU DE NAVIGATION --------------------------------
+selection = option_menu(
+    menu_title=None,
+    options=['Saisie des données']
+)
+
 #------------------------- ENTREES & SAUVEGARDE DES PERIODES ------------------------
 st.header(f"Entrée des données en {devise}")
 with st.form("Format d'entrée", clear_on_submit=True):
@@ -68,4 +74,4 @@ with st.form("periodes_sauvegardees"):
         col3.metric("Budget restant", f"{budget_restant} {devise}")
         st.text(f"Commentaire: {commentaire}")
 
-# with pleasure
+# 
