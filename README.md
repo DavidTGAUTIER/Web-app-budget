@@ -7,3 +7,5 @@ On active l'environnement vituel .venv
 On importe les librairie necessaires
 > pip install pipreqs # pour installer les librairies et créer le fichier requirements.txt</br>
 > pipreqs --encoding=utf8 # version pipreqs 0.4.11 (actuel en janvier 2023)
+
+# https://www.youtube.com/watch?v=3egaMfE9388&t=275s&ab_channel=CodingIsFun
