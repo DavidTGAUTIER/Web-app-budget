@@ -26,6 +26,7 @@ selection = option_menu(
     menu_title=None,
     options=['Saisie des données', 'Visualisation des données'],
     icons=['pencil-fill', 'bar-chart-fill'], # https://icons.getbootstrap.com/
+    orientation='horizontal'
 )
 
 #------------------------- ENTREES & SAUVEGARDE DES PERIODES ------------------------
