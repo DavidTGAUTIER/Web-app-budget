@@ -12,4 +12,13 @@ On importe les librairie necessaires
 > pip install pipreqs # pour installer les librairies et créer le fichier requirements.txt</br>
 > pipreqs --encoding=utf8 # version pipreqs 0.4.11 (actuel en janvier 2023)
 
+On crée l'image Docker
+> docker build . -t budget-web-app
+
+On execute l'image Docker
+sur windows : 
+> docker run -it -v "%cd%:/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
+sur mac / linux :
+> docker run -it -v "$(pwd):/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
+
 # https://www.youtube.com/watch?v=3egaMfE9388&t=275s&ab_channel=CodingIsFun
