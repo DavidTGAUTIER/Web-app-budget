@@ -1,6 +1,7 @@
 import calendar
 from datetime import datetime
 import streamlit as st
+from streamlit_option_menu import option_menu 
 import plotly.graph_objects as go
 
 
@@ -21,6 +22,17 @@ annees = [datetime.today().year, datetime.today().year+1]
 mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]
 # months = list(calendar.month_name[1:])
 
+#--------------------------- MASQUER LE STYLE STREAMLIT -----------------------------
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+# unsafe_allow_html : widget qui permet d'injecter du code CSS
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 #-------------------------------- MENU DE NAVIGATION --------------------------------
 selection = option_menu(
     menu_title=None,
@@ -30,7 +42,7 @@ selection = option_menu(
 )
 
 #------------------------- ENTREES & SAUVEGARDE DES PERIODES ------------------------
-if selection =='Saisir des données':
+if selection =='Saisie des données':
     st.header(f"Entrée des données en {devise}")
     with st.form("Format d'entrée", clear_on_submit=True):
         col1, col2 = st.columns(2)
