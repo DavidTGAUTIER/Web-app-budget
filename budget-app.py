@@ -24,7 +24,8 @@ mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septem
 #-------------------------------- MENU DE NAVIGATION --------------------------------
 selection = option_menu(
     menu_title=None,
-    options=['Saisie des données']
+    options=['Saisie des données', 'Visualisation des données'],
+    icons=['pencil-fill', 'bar-chart-fill'], # https://icons.getbootstrap.com/
 )
 
 #------------------------- ENTREES & SAUVEGARDE DES PERIODES ------------------------
