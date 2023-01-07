@@ -20,3 +20,8 @@ st.title(titre + " " + icon
 annee = [datetime.today().year, datetime.today().year+1]
 mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]
 # months = list(calendar.month_name[1:])
+
+#------------------------- ENTREES & SAUVEGARDE DES PERIODES ------------------------
+st.header(f"Entrée des données en {devise}")
+
+
