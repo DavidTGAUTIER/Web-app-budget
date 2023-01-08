@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv('.env')
 
 # Project Key
-DETA_KEY = 
+DETA_KEY = os.getenv("DETA_KEY")
 
 # Initialisation de Deta avec la DETA_KEY
 deta = Deta(DETA_KEY)
