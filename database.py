@@ -1,4 +1,5 @@
 from deta import Deta
+import streamlit as st
 
 # Project Key
 DETA_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
