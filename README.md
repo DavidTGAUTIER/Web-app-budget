@@ -2,7 +2,10 @@ On crée un environnement virtuel (pour isoler et éviter les problèmes de depe
 > python -m venv .venv
 
 On active l'environnement vituel .venv
+sous windows:</br>
 > .venv\Scripts\activate.bat
+sous mac/linux:
+> source .venv/bin/activate
 
 Voici la liste des modules à installer : plotly, streamlit
 > pip install plotly
