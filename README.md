@@ -27,3 +27,12 @@ sur windows(localhost) :</br>
 sur mac / linux(localhost) :</br>
 > docker run -it -v "$(pwd):/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
 
+#### Deploiement de l'app : masquer les variables d'environnement</br>
+avec Heroku :</br>
+> heroku config:set DETA_KEY="XXXXXXXXXXXXXXXXXXXXX"
+
+avec streamlit (https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app/connect-to-data-sources/secrets-management):</br> 
+> st.secrets["DETA_KEY"])
+
+
+

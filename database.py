@@ -3,11 +3,12 @@ from deta import Deta
 import streamlit as st
 from dotenv import load_dotenv
 
-# Chargement des variables d'environnement
+# Chargement des variables d'environnement (local)
 load_dotenv('.env')
-
-# Project Key
 DETA_KEY = os.getenv("DETA_KEY")
+
+# # Chargement des variables d'environnement (streamlit)
+# DETA_KEY = st.secrets["DETA_KEY"]
 
 # Initialisation de Deta avec la DETA_KEY
 deta = Deta(DETA_KEY)
@@ -25,7 +26,7 @@ puis on utilise db.put pour les inserer
 """
 
 # Insérer des valeurs d'une période spécifique dans la database
-def inserer_period(periode, revenus, depenses, commentaire):
+def inserer_periode(periode, revenus, depenses, commentaire):
     "Retourne le rapport d'une creation avec succes, sinon renvoi une erreur"
     return db.put({"clé":periode, "revenus":revenus, "depenses":depenses, "commentaire":commentaire})
 
