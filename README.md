@@ -13,7 +13,7 @@ sous mac/linux:
 > pip install streamlit
 
 #### On importe les librairie necessaires</br>
-> pip install pipreqs # pour installer les librairies et créer le fichier </br>
+> pip install pipreqs # pour installer les librairies et créer le fichier
 requirements.txt</br>
 > pipreqs --encoding=utf8 # version pipreqs 0.4.11 (actuel en janvier 2023)
 
