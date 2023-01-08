@@ -1,5 +1,10 @@
+import os
 from deta import Deta
 import streamlit as st
+from dotenv import load_dotenv
+
+# Chargement des variables d'environnement
+load_dotenv('.env')
 
 # Project Key
 DETA_KEY = 
