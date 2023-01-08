@@ -18,10 +18,9 @@ On importe les librairie necessaires
 On crée l'image Docker
 > docker build . -t budget-web-app
 
-On execute l'image Docker
-sur windows(localhost) : 
-> docker run -it -v "%cd%:/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
-sur mac / linux(localhost) :
+On execute l'image Docker</br>
+sur windows(localhost) :</br>
+> docker run -it -v "%cd%:/home/app" -p 4000:4000 -e PORT=4000 budget-web-app</br>
+sur mac / linux(localhost) :</br>
 > docker run -it -v "$(pwd):/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
 
-# https://www.youtube.com/watch?v=3egaMfE9388&t=275s&ab_channel=CodingIsFun
