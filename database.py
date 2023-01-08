@@ -2,7 +2,7 @@ from deta import Deta
 import streamlit as st
 
 # Project Key
-DETA_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+DETA_KEY = 
 
 # Initialisation de Deta avec la DETA_KEY
 deta = Deta(DETA_KEY)
