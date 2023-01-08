@@ -21,6 +21,7 @@ On crée l'image Docker
 On execute l'image Docker</br>
 sur windows(localhost) :</br>
 > docker run -it -v "%cd%:/home/app" -p 4000:4000 -e PORT=4000 budget-web-app</br>
+
 sur mac / linux(localhost) :</br>
 > docker run -it -v "$(pwd):/home/app" -p 4000:4000 -e PORT=4000 budget-web-app
 
